@@ -4,7 +4,7 @@
   <br />
   <br />
 
-  <h2 align="center">Technetix- Business Agency Website</h2>
+  <h2 align="center">Technetix - interactive LED pannel</h2>
 
   Technetix business agency website, <br />
 
@@ -14,11 +14,10 @@
 
 <br />
 
-```
 
 ### Contact
 
-If you want to contact with me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
+If you want to contact with me you can reach me at info@technetix.in.
 
 ### License
 
