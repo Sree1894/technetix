@@ -834,7 +834,8 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  --background-color: var(--hero-background-color);
+  /* --background-color: var(--hero-background-color); */
+  background-image: url(../img/banner/home-banner.jpg);
   --default-color: var(--hero-color);
   --heading-color: var(--hero-color);
   --contrast-color: var(--hero-color);
