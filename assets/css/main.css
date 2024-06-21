@@ -22,7 +22,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #37517e; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #47b2e4; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #F47429; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --contrast-color: #ffffff; /* The contrast color is used for elements when the background color is one of the heading, accent, or default colors. Its purpose is to ensure proper contrast and readability when placed over these more dominant colors */
 }
 
@@ -94,7 +94,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 66px;
   margin-right: 8px;
 }
 
@@ -1187,7 +1187,22 @@ section,
 # Services Section
 --------------------------------------------------------------*/
 .services {
-  --background-color: color-mix(in srgb, var(--heading-color), transparent 95%);
+  /* --background-color: color-mix(in srgb, var(--heading-color), transparent 95%); */
+}
+
+.services-read-more {
+  color: var(--accent-color);
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 8px 28px;
+  border-radius: 5px;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--accent-color);
 }
 
 .services .service-item {
