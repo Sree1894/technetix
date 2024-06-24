@@ -22,7 +22,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #37517e; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #47b2e4; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #F47429; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --contrast-color: #ffffff; /* The contrast color is used for elements when the background color is one of the heading, accent, or default colors. Its purpose is to ensure proper contrast and readability when placed over these more dominant colors */
 }
 
@@ -94,7 +94,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 66px;
   margin-right: 8px;
 }
 
@@ -445,7 +445,7 @@ h6 {
   color: var(--default-color);
   background-color: var(--background-color);
   font-size: 14px;
-  padding-bottom: 50px;
+  padding-bottom: 5px;
   position: relative;
 }
 
@@ -564,7 +564,7 @@ h6 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+  /* border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%); */
   font-size: 16px;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin-right: 10px;
@@ -632,7 +632,7 @@ h6 {
   margin-bottom: 5px;
 }
 
-.footer .copyright {
+/* .footer .copyright {
   padding-top: 25px;
   padding-bottom: 25px;
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
@@ -640,11 +640,108 @@ h6 {
 
 .footer .copyright p {
   margin-bottom: 0;
-}
+} 
 
 .footer .credits {
   margin-top: 6px;
   font-size: 13px;
+}*/
+
+.footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+.footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #47b2e4;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+.footer .footer-top .footer-links ul a {
+  color: #777777;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+.footer .footer-top .footer-links ul a:hover {
+  text-decoration: none;
+  color: #47b2e4;
+}
+
+.footer .footer-top .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #47b2e4;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+.footer .footer-top .social-links a:hover {
+  background: #209dd8;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #fff;
+  background: #37517e;
+}
+
+.copyright {
+  float: left;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.footer .credits {
+  float: right;
+  padding-left: .5rem;
+  font-size: 13px;
+}
+
+.footer .credits a {
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .footer .footer-bottom {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .footer .copyright, .footer .credits {
+    text-align: center;
+    float: none;
+  }
+  .footer .credits {
+    padding-top: 4px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -834,8 +931,9 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  /* --background-color: var(--hero-background-color); */
-  background-image: url(../img/banner/home-banner.jpg);
+  --background-color: var(--hero-background-color);
+  background-image: url(../img/banner/home-image.jpeg);
+  /* background-image: url(../img/contact-us.jpg); */
   --default-color: var(--hero-color);
   --heading-color: var(--hero-color);
   --contrast-color: var(--hero-color);
@@ -845,6 +943,8 @@ section,
   padding: 120px 0 60px 0;
   display: flex;
   align-items: center;
+  background-position:left center;
+  background-size:cover;
 }
 
 .hero h1 {
@@ -1187,15 +1287,50 @@ section,
 # Services Section
 --------------------------------------------------------------*/
 .services {
-  --background-color: color-mix(in srgb, var(--heading-color), transparent 95%);
+  /* --background-color: color-mix(in srgb, var(--heading-color), transparent 95%); */
+}
+
+.services .read-more {
+  color: var(--accent-color);
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 8px 28px;
+  border-radius: 5px;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--accent-color);
+  width: 175px;
+  margin: 0 auto;
+  height: 45px;
+}
+
+.services .read-more i {
+  font-size: 18px;
+  margin-left: 5px;
+  line-height: 0;
+  transition: 0.3s;
+}
+
+.services .read-more:hover {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.services .read-more:hover i {
+  transform: translate(5px, 0);
 }
 
 .services .service-item {
   box-shadow: 0px 5px 90px 0px color-mix(in srgb, var(--default-color), transparent 90%);
-  padding: 50px 30px;
+  padding: 40px 30px;
   transition: all ease-in-out 0.4s;
   background-color: var(--contrast-color);
   height: 100%;
+  border-radius: 1.25rem;
 }
 
 .services .service-item .icon {
