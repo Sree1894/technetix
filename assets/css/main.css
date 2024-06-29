@@ -94,7 +94,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 86px;
+  max-height: 66px;
   margin-right: 8px;
 }
 
@@ -1232,9 +1232,7 @@ section,
   font-weight: 700;
 }
 
-.skills .content p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-}
+
 
 .skills .content p:last-child {
   margin-bottom: 0;
@@ -2249,6 +2247,9 @@ section,
   color: var(--accent-color);
 }
 
+.choose{
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
