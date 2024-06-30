@@ -68,7 +68,7 @@
                   <li><a href="#">Deep Dropdown 5</a></li>
                 </ul>
               </li> -->
-              <li><a href="#">Enterprises</a></li>
+              <li><a href="#">Enterprise</a></li>
               <li><a href="#">Training</a></li>
             </ul>
           </li>
@@ -89,8 +89,8 @@
                   <li><a href="#">Enterprise Product 1</a></li>
                   <li><a href="#">Enterprise Product 2</a></li>
                   <li><a href="#">Enterprise Product 3</a></li>
-                  <li><a href="#">Enterprises Product 4</a></li>
-                  <li><a href="#">Enterprises Product 5</a></li>
+                  <li><a href="#">Enterprise Product 4</a></li>
+                  <li><a href="#">Enterprise Product 5</a></li>
                 </ul>
               </li>
               <li><a href="#">Training</a>
@@ -211,57 +211,71 @@
     
     
     <!-- Why Us Section -->
-    <section id="why-us" class="section why-us" data-builder="section">
+    <section id="testimonials" class="testimonials section" style=" --background-color: color-mix(in srgb, var(--heading-color), transparent 95%);">
 
-      <div class="container-fluid">
+      <div class="container" data-aos="fade-up" data-aos-delay="100" >
 
-        <div class="row gy-4">
-
-          <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
-
-            <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
-              <h3><span>what we provide</span></h3>
-              <p>We offer cutting-edge interactive LED solutions for transformative learning experiences.</p>
-            </div>
-
-            <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
-
-              <div class="faq-item faq-active">
-
-                <h3><span>01</span> Premium Video Conferencing Solution </h3>
-                <div class="faq-content">
-                  <p>Start your meeting with just one touch, our solutions can seamlessly connect and manage your devices in different platforms.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3><span>02</span> Interactive Flat Panels </h3>
-                <div class="faq-content">
-                  <p>Discover our range of high-quality interactive displays providing exceptional value at a great price.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3><span>03</span> SMART Interactive Displays</h3>
-                <div class="faq-content">
-                  <p>Seamlessly connect your classroom technology and infrastructure with a SMART Board interactive display. Bring together your student devices, computers and peripherals, digital tools and content,so they’re used to their fullest potential. Durable and commercial-grade | Built to use. Built to last.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-5 order-1 order-lg-2 why-us-img">
-            <img src="assets/img/banner/banner-3.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
-          </div>
+        <div class="container section-title" data-aos="fade-up">
+          <h2>what we provide </h2>
+          <p>We offer cutting-edge interactive LED solutions for transformative learning experiences,delivering innovative interactive LED panels for enhanced learning Seamlessly.</p>
         </div>
-
+      
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+  
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/services/education-1.jpg" style="border-radius: 10px; width:500px"  class="testimonial-img" alt="">
+                <h3>Education Solutions</h3>
+                <!-- <h4>Ceo &amp; Founder</h4> -->
+                <!-- <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div> -->
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Start your meeting with just one touch, our solutions can seamlessly connect and manage your devices in different platforms.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+  
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/services/enterprise.jpg"  style="border-radius: 10px; width:500px"  class="testimonial-img" alt="">
+                <h3>Enterprise Solutions</h3>
+                <!-- <h4>Designer</h4> -->
+                <!-- <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div> -->
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Discover our range of high-quality interactive displays providing exceptional value at a great price.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+  
+            
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+  
       </div>
-
     </section><!-- /Why Us Section -->
 
 
@@ -422,7 +436,7 @@
             <div class="testimonial-item">
               <img src="assets/img/clients/client-8.png" class="testimonial-img" alt="">
               <h3>Vinmeen</h3>
-              <h4>Ceo &amp; Founder</h4>
+              <!-- <h4>Ceo &amp; Founder</h4> -->
               <div class="stars">
                 <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
               </div>
@@ -438,7 +452,7 @@
             <div class="testimonial-item">
               <img src="assets/img/clients/client-1.png" class="testimonial-img" alt="">
               <h3>CIT</h3>
-              <h4>Designer</h4>
+              <!-- <h4>Designer</h4> -->
               <div class="stars">
                 <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
               </div>
@@ -454,7 +468,7 @@
             <div class="testimonial-item">
               <img src="assets/img/clients/client-7.png" class="testimonial-img" alt="">
               <h3>NGP</h3>
-              <h4>Store Owner</h4>
+              <!-- <h4>Store Owner</h4> -->
               <div class="stars">
                 <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
               </div>
@@ -470,7 +484,7 @@
             <div class="testimonial-item">
               <img src="assets/img/clients/client-4.png" class="testimonial-img" alt="">
               <h3>Thassim</h3>
-              <h4>Freelancer</h4>
+              <!-- <h4>Freelancer</h4> -->
               <div class="stars">
                 <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
               </div>
